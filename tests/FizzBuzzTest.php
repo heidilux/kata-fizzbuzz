@@ -24,4 +24,9 @@ class FizzBuzzText extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals("Buzz", $this->fb->passNumber(5));
     }
+
+    public function testWhenANumberDivisibleByBoth3And5IsPassedInItReturnsFizzBuzz()
+    {
+        $this->assertEquals("FizzBuzz", $this->fb->passNumber(15));
+    }
 }
