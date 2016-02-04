@@ -7,4 +7,10 @@ class FizzBuzzText extends PHPUnit_Framework_TestCase
         $fb = new FizzBuzz();
         $this->assertEquals("1", $fb->passNumber(1));
     }
+
+    public function testWhenANumberDivisibleBy3IsPassedInItReturnsFizz()
+    {
+        $fb = new FizzBuzz();
+        $this->assertEquals("Fizz", $fb->passNumber(3));
+    }
 }
