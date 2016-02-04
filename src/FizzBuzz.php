@@ -7,6 +7,8 @@ class FizzBuzz
     {
         if ($number %3 == 0) {
             return "Fizz";
+        } elseif ($number %5 == 0) {
+            return "Buzz";
         }
         return $number;
     }
