@@ -3,8 +3,8 @@
 
 class FizzBuzz
 {
-    public function fizzBuzz()
+    public function passNumber($number)
     {
-
+        return $number;
     }
 }
